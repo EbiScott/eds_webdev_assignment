@@ -51,11 +51,11 @@ const App = () => {
   ]; 
 
   return (
-    <div className="flex ">
-    <div className="w-1/3 h-screen overflow-y-auto">
+    <div className="flex lg:flex-row flex-col ">
+    <div className="lg:w-1/3 w-full h-screen overflow-y-auto">
       <ImageViewer image={images[selectedImageIndex]} />
     </div>
-    <div className="w-2/3 p-4 overflow-y-auto">
+    <div className="lg:w-2/3 w-full p-4 overflow-y-auto">
       <ButtonList image={imageSub} buttons={buttons} onButtonClick={handleButtonClick} />
     </div>
   </div>
